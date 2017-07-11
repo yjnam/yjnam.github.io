@@ -1,0 +1,15 @@
+@charset "utf-8;"
+body,div,ul,li,h1,h2,h3,h4,h5,h6,header{margin: 0; padding: 0;}
+
+.warp{}
+.header{border-bottom: 1px solid #dedede;}
+.body{}
+
+.logo{padding: 10px 0 10px 20px;}
+.logo img{height: 26px;}
+
+.menu-wrap{border-top: 1px solid #dedede;border-bottom: 1px solid #dedede;}
+.menu{}
+.menu:after{display: block; clear: both; content: '';}
+.munu>li{float: left; width:20%;}
+.munu>li>a{color:#333; display: block; text-decoration: none; text-align: center; padding: 0.75em 0; font-style: 13px;white-space: nowrap;}
