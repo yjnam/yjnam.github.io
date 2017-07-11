@@ -1,15 +1,55 @@
-@charset "utf-8;"
+@charset "utf-8";
+/*reset*/
 body,div,ul,li,h1,h2,h3,h4,h5,h6,header{margin: 0; padding: 0;}
+ul{list-style: none; }
 
-.warp{}
+
+/*layout*/
+.wrap{}
 .header{border-bottom: 1px solid #dedede;}
 .body{}
 
+/*logo*/
+.logo-wrap{position: relative;}
 .logo{padding: 10px 0 10px 20px;}
 .logo img{height: 26px;}
 
+/*최상단 아이콘*/
+.icons-top{position: absolute; top:10px; right: 10px;}
+.icons-top:after{display: block; clear: both; content: ''; }
+.icons-top>li{float: left;}
+.icons-top>li>a{display: block; font-size: 8px; text-decoration: none; width: 40px; text-align: center;}
+.icons-top>li>a.first{width: 30px;}
+.icons-top img{display: block; width:18px; margin: 0 auto;}
+
+/*메인메뉴*/
 .menu-wrap{border-top: 1px solid #dedede;border-bottom: 1px solid #dedede;}
 .menu{}
-.menu:after{display: block; clear: both; content: '';}
-.munu>li{float: left; width:20%;}
-.munu>li>a{color:#333; display: block; text-decoration: none; text-align: center; padding: 0.75em 0; font-style: 13px;white-space: nowrap;}
+.menu:after{display: block; clear: both; content: ''; }
+.menu>li{float: left; width:20%; }
+.menu>li>a{color:#333; display: block; text-decoration: none; text-align: center; padding: 0.75em 0; font-size: 13px; white-space: nowrap;}
+
+/*메인슬라이더*/
+.sliders img{width: 100%;}
+
+/*bxSlider 초기화*/
+.bx-wrapper{position:relative;margin-bottom:60px;padding:0;-ms-touch-action:pan-y;touch-action:pan-y;-moz-box-shadow:0 0 0px #ccc;-webkit-box-shadow:0 0 0px #ccc;box-shadow:0 0 0px #ccc;border:0px solid #fff;background:#fff}
+
+/*bxSlider Pager(버튼) custom*/
+.bx-wrapper .bx-pager.bx-default-pager a{background-color: #ccc;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover{background-color: #888;}
+.bx-wrapper .bx-pager.bx-default-pager a.active{background-color: #f00;}
+
+/*bxSlider prev,next hide*/
+.bx-wrapper .bx-controls-direction{display: none;}
+
+/*footer*/
+.footer{background-color:#f2f2f2;padding: 2em; line-height: 1.2em;}
+.footer-content span{display: block; font-size:12px;}
+.footer-content address{font-size:12px; font-style: normal;}
+
+
+
+
+
+
